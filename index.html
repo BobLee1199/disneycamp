@@ -447,7 +447,7 @@ CHARACTERS/MUSES PAGE: PETAL DANCE by JULIAROLEPLAYS
 
 <div class="category">
     <h1>ano</h1>
-            <div class="button-group" data-filter-group="YOUR FILTER">
+            <div class="button-group1" data-filter-group="YOUR FILTER">
             <button class="button is-checked" data-filter="">todos</button>
             <button class="button" data-filter=".H1">calouro</button>
             <button class="button" data-filter=".H2">2º ano</button>
@@ -461,7 +461,7 @@ CHARACTERS/MUSES PAGE: PETAL DANCE by JULIAROLEPLAYS
 
 <div class="category">
     <h1>gênero</h1>
-            <div class="button-group" data-filter-group="YOUR FILTER">
+            <div class="button-group2" data-filter-group="YOUR FILTER">
             <button class="button is-checked" data-filter="">todos</button>
             <button class="button" data-filter=".B1">feminino</button>
             <button class="button" data-filter=".B2">masculino</button>
@@ -472,7 +472,7 @@ CHARACTERS/MUSES PAGE: PETAL DANCE by JULIAROLEPLAYS
     
 <div class="category">
     <h1>sexualidade</h1>
-        <div class="button-group" data-filter-group="YOUR FILTER">
+        <div class="button-group3" data-filter-group="YOUR FILTER">
             <button class="button is-checked" data-filter="">todos</button>
             <button class="button" data-filter=".C1">hetero</button>
             <button class="button" data-filter=".C2">homo</button>
@@ -486,7 +486,7 @@ CHARACTERS/MUSES PAGE: PETAL DANCE by JULIAROLEPLAYS
     
 <div class="category">
     <h1>idade</h1>
-        <div class="button-group" data-filter-group="YOUR FILTER">
+        <div class="button-group4" data-filter-group="YOUR FILTER">
             <button class="button is-checked" data-filter="">todos</button>
             <button class="button" data-filter=".D1">15-17</button>
             <button class="button" data-filter=".D2">18-20</button>
@@ -498,7 +498,7 @@ CHARACTERS/MUSES PAGE: PETAL DANCE by JULIAROLEPLAYS
     
 <div class="category">
     <h1>parentesco</h1>
-        <div class="button-group" data-filter-group="YOUR FILTER">
+        <div class="button-group5" data-filter-group="YOUR FILTER">
             <button class="button is-checked" data-filter="">todos</button>
             <button class="button" data-filter=".E1">solo</button>
             <button class="button" data-filter=".E2">princesas</button>
@@ -515,7 +515,7 @@ CHARACTERS/MUSES PAGE: PETAL DANCE by JULIAROLEPLAYS
     
 <div class="category">
     <h1>par</h1>
-        <div class="button-group" data-filter-group="YOUR FILTER">
+        <div class="button-group6" data-filter-group="YOUR FILTER">
             <button class="button is-checked" data-filter="">todos</button>
             <button class="button" data-filter=".G1">disponível</button>
         </div>
@@ -526,7 +526,7 @@ CHARACTERS/MUSES PAGE: PETAL DANCE by JULIAROLEPLAYS
     
 <div class="category">
     <h1>aniversário</h1>
-        <div class="button-group" data-filter-group="YOUR FILTER">
+        <div class="button-group7" data-filter-group="YOUR FILTER">
             <button class="button is-checked" data-filter="">todos</button>
             <button class="button" data-filter=".F1">janeiro</button>
             <button class="button" data-filter=".F2">fevereiro</button>
@@ -2347,6 +2347,69 @@ $('#sidebar').on( 'click', '.button', function() {
  
 // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+ 
+// change is-checked class on buttons
+$('.button-group1').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+ 
+// change is-checked class on buttons
+$('.button-group2').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+ 
+// change is-checked class on buttons
+$('.button-group3').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+ 
+// change is-checked class on buttons
+$('.button-group4').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+ 
+// change is-checked class on buttons
+$('.button-group5').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+ 
+// change is-checked class on buttons
+$('.button-group6').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+ 
+// change is-checked class on buttons
+$('.button-group7').each( function( i, buttonGroup ) {
   var $buttonGroup = $( buttonGroup );
   $buttonGroup.on( 'click', 'button', function() {
     $buttonGroup.find('.is-checked').removeClass('is-checked');
